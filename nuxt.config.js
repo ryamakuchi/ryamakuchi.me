@@ -3,6 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   srcDir: 'src/',
+  css: ['@/assets/stylesheets/main.scss'],
   head: {
     title: 'ryamakuchi.me',
     meta: [

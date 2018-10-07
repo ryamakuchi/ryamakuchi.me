@@ -1,0 +1,43 @@
+// floatを解除する
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+// 非表示にする
+.hidden {
+  display: none !important;
+}
+
+// 要素を非表示にする（モバイルファースト）
+// モバイルのときは非表示にする
+.sp-none {
+  display: none!important;
+  @media (min-width: $breakpoint--is-small) {
+    display: block!important;
+  }
+}
+// PCのときは非表示にする
+.pc-none {
+  display: block!important;
+  @media (min-width: $breakpoint--is-small) {
+    display: none!important;
+  }
+}
+
+// 一行の文字の末尾を「...」にする
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// hoverすると少し透過する
+.shine {
+  transition: opacity $transition-time;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
