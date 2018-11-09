@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <form class="form" name="contact" method="POST" netlify>
+    <form class="form" name="contact" method="POST" data-netlify="true">
       <p>Web制作の依頼や質問などはこちらのフォームからどうぞ。</p>
       <br>
       <div class="form-item">
