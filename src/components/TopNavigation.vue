@@ -1,9 +1,9 @@
 <template>
   <div class="nav">
     <ul>
-      <li class="nav-item"><a href="./">Home</a></li>
-      <li class="nav-item"><a href="./about">About</a></li>
-      <li class="nav-item"><a href="./contact">Contact</a></li>
+      <li class="nav-item"><router-link to="/" exact>Home</router-link></li>
+      <li class="nav-item"><router-link to="/about">About</router-link></li>
+      <li class="nav-item"><router-link to="/contact">Contact</router-link></li>
     </ul>
   </div>
 </template>
@@ -19,27 +19,36 @@
 
     ul {
       padding: 0;
+      display: flex;
+      justify-content: center;
     }
 
     &-item {
       display: inline-block;
-      margin: 1rem 5%;
+      margin: 1rem;
 
       a {
+        display: block;
         color: #fff;
         font-size: 2rem;
         font-weight: bold;
         letter-spacing: 2px;
+        padding: 0 1rem;
+        border-radius: 4px;
+        transition: 0.5s;
+
+        &:hover {
+          color: #35495E;
+          background: rgba(255,255,255,0.5);
+          transition: 0.5s;
+        }
       }
-    }
-  }
 
-  @media (max-width: 768px) {
-    .nav {
-      text-align: left;
-
-      &-item {
-        width: 15%;
+      a.nuxt-link-active{
+        color: #35495E;
+        background: rgba(255,255,255,0.9);
+        box-shadow: 0 0px 5px rgba(0,0,0,0.8);
+        transition: 0.5s;
       }
     }
   }

@@ -41,3 +41,11 @@
     opacity: 0.8;
   }
 }
+
+// Nuxtのトランジション設定
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}

@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <div class="about">
     <div class="contents">
       <div class="avator">
         <img src="~/assets/images/thumbnail.jpg"/>
@@ -20,7 +20,7 @@
         <p class="skills-tag skills-tag-hobby">Bass</p>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -40,7 +40,9 @@
     width: 80vw;
     height: 80vh;
     margin: 10vh auto 10vh;
-    background: linear-gradient(to left top, rgba(249,249,249,1), rgba(255,255,255,0.2));
+    background: #fff;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.5);
+    border-radius: 2px;
     padding: 5%;
     text-align: center;
   }

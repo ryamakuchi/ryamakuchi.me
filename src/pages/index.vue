@@ -93,8 +93,16 @@
 
     &-icon {
       display: block;
-      margin: 2rem 0 2rem auto;
+      margin: 0 0 0 auto;
       width: 30%;
+      padding: 1rem;
+      transition: 0.5s;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 0.5s;
+      }
 
       a {
         color: #fff;
@@ -131,13 +139,12 @@
     }
 
     .social {
-      top: 20%;
+      top: 30%;
       right: 10%;
       left: auto;
 
       &-icon {
-        width: 90%;
-        margin-left: 10%;
+        width: 80%;
 
         a {
           color: #fff;
@@ -161,6 +168,19 @@
       bottom: 10%;
       font-size: 10vw;
       color: #fff;
+    }
+  }
+
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    .bg-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      height: 100vh;
+      width: auto;
+      z-index: -2;
     }
   }
 </style>
