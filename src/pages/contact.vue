@@ -1,6 +1,7 @@
 <template>
   <div class="contact">
-    <form class="form" name="contact" method="POST" data-netlify="true">
+    <form name="contact" netlify-honeypot="bot-field" action="thank-you" data-netlify="true" method="post" class="form">
+      <input type="hidden" name="form-name" value="contact" />
       <p>Web制作の依頼や質問などはこちらのフォームからどうぞ。</p>
       <br>
       <div class="form-item">
