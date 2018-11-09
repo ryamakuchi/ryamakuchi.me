@@ -5,7 +5,7 @@
         <img src="~/assets/images/thumbnail.jpg"/>
         <h2>@rry (リリィ)</h2>
         <p>
-          Web Engineerを始めたばかり。以前はSIerとコーダーのお仕事をしていました。<br>
+          Web Engineerとして恵比寿の会社で働いています。以前はSIerとコーダーのお仕事をしていました。<br>
           普段はVue.js/Nuxt.jsとRuby on Railsを書いています。<br>CSSも好き！
         </p>
       </div>
