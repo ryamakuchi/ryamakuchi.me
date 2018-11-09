@@ -11,19 +11,51 @@
       </div>
       <div class="skills">
         <h3 class="skills-title">SKILLS: </h3>
-        <p class="skills-tag">HTML5</p>
-        <p class="skills-tag">CSS3</p>
-        <p class="skills-tag">Vue.js/Nuxt.js</p>
-        <p class="skills-tag">Ruby on Rails</p>
-        <p class="skills-tag">Laravel</p>
-        <p class="skills-tag skills-tag-hobby">Guitar</p>
-        <p class="skills-tag skills-tag-hobby">Bass</p>
+          <p v-for="tag in tags" :key="tag.id" class="skills-tag" :class="{ 'skills-tag-hobby': tag.isHobby }">{{tag.name}}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  export default {
+    transition: 'about',
+    computed: {
+      tags() {
+        return [
+          {
+            name: 'HTML5',
+            isHobby: false
+
+          },
+          {
+            name: 'CSS3',
+            isHobby: false
+          },
+          {
+            name: 'Vue.js/Nuxt/js',
+            isHobby: false
+          },
+          {
+            name: 'Ruby on Rails',
+            isHobby: false
+          },
+          {
+            name: 'Laravel',
+            isHobby: false
+          },
+          {
+            name: 'Guitar',
+            isHobby: true
+          },
+          {
+            name: 'Bass',
+            isHobby: true
+          }
+        ]
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -73,6 +105,7 @@
       border: 2px solid #41b883;
       color: #41b883;
       padding: 0 1rem;
+
 
       &-hobby {
         border: 2px solid #EC625D;

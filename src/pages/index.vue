@@ -43,9 +43,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style lang="scss" scoped>
   .top {
     position: absolute;
