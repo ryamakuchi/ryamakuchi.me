@@ -3,10 +3,10 @@
     <div class="contents">
       <div class="avator">
         <img src="~/assets/images/thumbnail.jpg"/>
-        <h2>@rry (リリィ)</h2>
+        <h2>rry (リリィ)</h2>
         <p>
-          Web Engineerとして恵比寿の会社で働いています。以前はSIerとコーダーのお仕事をしていました。<br>
-          普段はVue.js/Nuxt.jsとRuby on Railsを書いています。<br>CSSも好き！
+          Web Engineer として STORES.jp / hey で働いています。<br>
+          普段は Vue.js と Ruby を書いています。<br>CSS も好き！
         </p>
       </div>
       <div class="skills">
@@ -24,24 +24,20 @@
       tags() {
         return [
           {
-            name: 'HTML5',
+            name: 'HTML',
             isHobby: false
 
           },
           {
-            name: 'CSS3',
+            name: 'CSS',
             isHobby: false
           },
           {
-            name: 'Vue.js/Nuxt/js',
+            name: 'Vue.js / Nuxt.js',
             isHobby: false
           },
           {
-            name: 'Ruby on Rails',
-            isHobby: false
-          },
-          {
-            name: 'Laravel',
+            name: 'Ruby / Ruby on Rails',
             isHobby: false
           },
           {
