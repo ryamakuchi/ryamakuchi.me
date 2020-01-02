@@ -3,10 +3,11 @@
     <div class="contents">
       <div class="avator">
         <img src="~/assets/images/thumbnail.jpg"/>
-        <h2>@rry (リリィ)</h2>
+        <h1>rry<span> (リリィ)</span></h1>
+
         <p>
-          Web Engineerとして恵比寿の会社で働いています。以前はSIerとコーダーのお仕事をしていました。<br>
-          普段はVue.js/Nuxt.jsとRuby on Railsを書いています。<br>CSSも好き！
+          STORES.jp (heyinc) で働いている Web Engineer です。<br>
+          普段は Ruby を書いています。<br>CSS と Vue.js も好き！
         </p>
       </div>
       <div class="skills">
@@ -24,24 +25,20 @@
       tags() {
         return [
           {
-            name: 'HTML5',
+            name: 'HTML',
             isHobby: false
 
           },
           {
-            name: 'CSS3',
+            name: 'CSS',
             isHobby: false
           },
           {
-            name: 'Vue.js/Nuxt/js',
+            name: 'Vue.js / Nuxt.js',
             isHobby: false
           },
           {
-            name: 'Ruby on Rails',
-            isHobby: false
-          },
-          {
-            name: 'Laravel',
+            name: 'Ruby / Ruby on Rails',
             isHobby: false
           },
           {
@@ -118,8 +115,12 @@
     .avator {
       width: 100%;
 
-      h2 {
+      h1 {
         font-size: 1.6rem;
+
+        span {
+          font-size: 1.2rem;
+        }
       }
 
       p {
