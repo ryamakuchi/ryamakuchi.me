@@ -7,34 +7,33 @@
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
+
     <img class="bg-image" src="~/assets/images/bg-image.jpg" alt="背景画像"/>
+
     <div class="contents">
       <h1 class="hero">rry's web site.</h1>
+
       <div class="social">
         <div class="social-icon">
           <a href="https://twitter.com/ryamakuchi" target="_blank">
-            @ryamakuchi
             <img src="~/assets/images/icon-twitter.svg"/>
           </a>
         </div>
 
         <div class="social-icon">
           <a href="https://www.facebook.com/ryamakuchi" target="_blank">
-            @山口里央
             <img src="~/assets/images/icon-facebook.svg"/>
           </a>
         </div>
 
         <div class="social-icon">
           <a href="https://www.instagram.com/junk_code/" target="_blank">
-            @junk_code
             <img src="~/assets/images/icon-instagram.svg"/>
           </a>
         </div>
 
         <div class="social-icon">
           <a href="https://github.com/ryamakuchi" target="_blank">
-            @rry
             <img src="~/assets/images/icon-github.svg"/>
           </a>
         </div>
@@ -91,15 +90,9 @@
     &-icon {
       display: block;
       margin: 0 0 0 auto;
-      width: 30%;
       padding: 1rem;
       transition: 0.5s;
       border-radius: 4px;
-
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-        transition: 0.5s;
-      }
 
       a {
         color: #fff;
@@ -108,8 +101,8 @@
 
       img {
         display: inline-block;
-        width: 20%;
-        height: 20%;
+        width: 5%;
+        height: 5%;
       }
     }
   }
@@ -141,8 +134,6 @@
       left: auto;
 
       &-icon {
-        width: 80%;
-
         a {
           color: #fff;
           font-size: 2rem;

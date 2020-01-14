@@ -3,10 +3,11 @@
     <div class="contents">
       <div class="avator">
         <img src="~/assets/images/thumbnail.jpg"/>
-        <h2>rry (リリィ)</h2>
+        <h1>rry<span> (リリィ)</span></h1>
+
         <p>
-          Web Engineer として STORES.jp / hey で働いています。<br>
-          普段は Vue.js と Ruby を書いています。<br>CSS も好き！
+          STORES.jp (heyinc) で働いている Web Engineer です。<br>
+          普段は Ruby を書いています。<br>CSS と Vue.js も好き！
         </p>
       </div>
       <div class="skills">
@@ -114,8 +115,12 @@
     .avator {
       width: 100%;
 
-      h2 {
+      h1 {
         font-size: 1.6rem;
+
+        span {
+          font-size: 1.2rem;
+        }
       }
 
       p {
