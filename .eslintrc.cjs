@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:astro/recommended', 'prettier'],
+  extends: ['plugin:astro/recommended', 'prettier', 'plugin:storybook/recommended'],
   env: {
     browser: true,
     node: true,
