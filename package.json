@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "prettier .",
-    "fix": "prettier -w ."
+    "fix": "prettier -w .",
+    "test": "vitest"
   },
   "dependencies": {
     "@astrojs/solid-js": "^2.1.1",
