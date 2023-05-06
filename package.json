@@ -10,7 +10,7 @@
     "astro": "astro",
     "lint": "prettier .",
     "fix": "prettier -w .",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "dependencies": {
     "@astrojs/solid-js": "^2.1.1",
