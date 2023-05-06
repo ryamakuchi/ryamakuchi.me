@@ -1,4 +1,13 @@
 module.exports = {
+  extends: ['plugin:astro/recommended', 'prettier'],
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
   overrides: [
     {
       // Define the configuration for `.astro` file.
@@ -7,9 +16,7 @@ module.exports = {
       plugins: ['astro'],
       env: {
         // Enables global variables available in Astro components.
-        node: true,
         'astro/astro': true,
-        es2020: true,
       },
       // Allows Astro components to be parsed.
       parser: 'astro-eslint-parser',
