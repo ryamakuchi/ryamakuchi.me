@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "prettier .",
+    "fix": "prettier -w ."
   },
   "dependencies": {
     "@astrojs/solid-js": "^2.1.1",
